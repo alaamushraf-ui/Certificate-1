@@ -3,40 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسجيل الدخول - مشروع شهادتي</title>
+    <title>تسجيل الدخول - وثّق شهادتك</title>
+    <!-- ربط ملف الـ CSS المشترك -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ربط مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <!-- شريط التنقل العلوي -->
     <header>
-        <div class="logo">شهادتي</div>
+        <div class="logo">وثّق شهادتك</div>
         <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="about.html">عن الموقع</a>
-            <a href="contact.html">اتصل بنا</a>
-            <a href="login.html" class="active">تسجيل الدخول</a>
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> عن الموقع</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+            <a href="login.html" class="btn-login active"><i class="fas fa-lock"></i> تسجيل الدخول</a>
         </nav>
     </header>
 
-    <!-- محتوى صفحة تسجيل الدخول -->
-    <main class="hero">
-        <h1>تسجيل الدخول</h1>
-        <p>الرجاء إدخال بيانات حسابك للدخول إلى النظام</p>
+    <!-- المحتوى الرئيسي بتصميم Split فني وحديث -->
+    <main class="hero" style="max-width: 950px; padding: 0; overflow: hidden; display: flex; flex-wrap: wrap; text-align: right; box-shadow: 0 15px 35px rgba(0,0,0,0.08);">
+        
+        <!-- الجانب الأيمن: صورة أكاديمية معتمة بتأثير فني راقي -->
+        <div style="flex: 1; min-width: 320px; background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop&q=60') center/cover no-repeat; min-height: 420px; position: relative;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26, 54, 93, 0.85), rgba(49, 130, 206, 0.7)); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; color: white; text-align: center;">
+                <i class="fas fa-certificate fa-3x" style="margin-bottom: 20px; opacity: 0.9;"></i>
+                <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 10px;">بوابة الاعتماد الآمن</h3>
+                <p style="font-size: 14px; opacity: 0.9; line-height: 1.6;">سجل دخولك الآن لإدارة شهاداتك الأكاديمية والاطلاع على التوثيقات الرسمية بكل ثقة وسرعة.</p>
+            </div>
+        </div>
 
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="email">البريد الإلكتروني:</label>
-                <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+        <!-- الجانب الأيسر: نموذج تسجيل الدخول الفني -->
+        <div style="flex: 1.2; min-width: 320px; padding: 40px 35px; display: flex; flex-direction: column; justify-content: center; background: #ffffff;">
+            <div style="margin-bottom: 25px;">
+                <h2 style="font-size: 24px; color: #1a365d; font-weight: 700; letter-spacing: -0.5px;">أهلاً بك مجدداً</h2>
+                <p style="font-size: 13px; color: #718096; margin-top: 6px;">فضلاً أدخل بيانات الحساب للمتابعة</p>
             </div>
 
-            <div class="form-group">
-                <label for="password">كلمة المرور:</label>
-                <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور">
-            </div>
+            <form style="display: flex; flex-direction: column; gap: 16px;">
+                <!-- حقل البريد أو اسم المستخدم -->
+                <div>
+                    <label for="username" style="display: block; margin-bottom: 6px; font-weight: 600; color: #2d3748; font-size: 13px;">البريد الإلكتروني:</label>
+                    <div style="position: relative;">
+                        <i class="fas fa-envelope" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: #a0aec0;"></i>
+                        <input type="text" id="username" placeholder="name@example.com" required style="width: 100%; padding: 11px 40px 11px 14px; border: 1px solid #cbd5e0; border-radius: 8px; font-family: 'Cairo', sans-serif; outline: none; font-size: 14px; background: #fdfdfe; transition: all 0.2s;">
+                    </div>
+                </div>
 
-            <button type="submit" class="cta-btn">دخول</button>
-        </form>
+                <!-- حقل كلمة المرور -->
+                <div>
+                    <label for="password" style="display: block; margin-bottom: 6px; font-weight: 600; color: #2d3748; font-size: 13px;">كلمة المرور:</label>
+                    <div style="position: relative;">
+                        <i class="fas fa-lock" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: #a0aec0;"></i>
+                        <input type="password" id="password" placeholder="••••••••" required style="width: 100%; padding: 11px 40px 11px 14px; border: 1px solid #cbd5e0; border-radius: 8px; font-family: 'Cairo', sans-serif; outline: none; font-size: 14px; background: #fdfdfe; transition: all 0.2s;">
+                    </div>
+                </div>
+
+                <!-- خيارات إضافية -->
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #4a5568; margin-top: 2px;">
+                    <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                        <input type="checkbox" style="accent-color: #3182ce; width: 15px; height: 15px;"> تذكرني
+                    </label>
+                    <a href="#" style="color: #3182ce; text-decoration: none; font-weight: 600; transition: color 0.2s;">نسيت كلمة المرور؟</a>
+                </div>
+
+                <!-- زر الدخول -->
+                <button type="submit" class="cta-btn" style="border: none; cursor: pointer; width: 100%; margin-top: 8px; font-size: 15px; padding: 12px; text-align: center;">تسجيل الدخول <i class="fas fa-arrow-left" style="margin-right: 8px;"></i></button>
+            </form>
+
+            <!-- رابط إنشاء حساب -->
+            <p style="text-align: center; margin-top: 25px; font-size: 13px; color: #718096; border-top: 1px solid #edf2f7; padding-top: 18px;">
+                ليس لديك حساب أكاديمي؟ <a href="#" style="color: #3182ce; font-weight: 700; text-decoration: none;">سجل الآن</a>
+            </p>
+        </div>
     </main>
 
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - مشروع وثّق شهادتك</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
