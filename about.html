@@ -3,25 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وثق شهادتك - عن الموقع</title>
+    <title>عن الموقع - وثّق شهادتك</title>
+    <!-- ربط ملف الـ CSS المشترك -->
     <link rel="stylesheet" href="style.css">
+    <!-- ربط مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- شريط التنقل العلوي -->
     <header>
-        <div class="logo">وثق شهادتك</div>
+        <div class="logo">وثّق شهادتك</div>
         <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="about.html" class="active">عن الموقع</a>
-            <a href="contact.html">اتصل بنا</a>
-            <a href="login.html" class="btn-login">تسجيل الدخول</a>
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="about.html" class="active"><i class="fas fa-info-circle"></i> عن الموقع</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+            <a href="login.html" class="btn-login"><i class="fas fa-lock"></i> تسجيل الدخول</a>
         </nav>
     </header>
 
+    <!-- المحتوى الرئيسي لصفحة عن الموقع -->
     <main class="hero">
-        <h1>عن موقع وثق شهادتك</h1>
-        <p>منصتك الموثوقة لحفظ وتوثيق الشهادات الأكاديمية والمهنية بكل سهولة وأمان.</p>
+        <!-- الصورة التعبيرية في صفحة عن الموقع -->
+        <div class="hero-image" style="text-align: center; margin-bottom: 25px;">
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&auto=format&fit=crop&q=60" alt="فريق العمل ورؤية المنصة" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        </div>
+        
+        <h1>عن منصة وثّق شهادتك</h1>
+        <p style="text-align: right; line-height: 1.8; margin-top: 20px;">
+            منصة <strong>"وثّق شهادتك"</strong> هي بوابتك الرقمية المعتمدة لحفظ وتوثيق المستندات والشهادات الأكاديمية بكل سهولة، أمان، وموثوقية عالية. نسعى دائماً لتوفير بيئة رقمية متطورة تخدم الطلاب والخريجين والمؤسسات التعليمية عبر تسريع وتسهيل إجراءات التحقق من الوثائق الرسمية بأعلى معايير الجودة والأمان الرقمي.
+        </p>
+        
+        <div style="margin-top: 30px;">
+            <a href="contact.html" class="cta-btn">تواصل معنا للمزيد</a>
+        </div>
     </main>
 
+    <!-- قسم بطاقات إضافية توضيحية -->
+    <section class="features-container">
+        <div class="card">
+            <i class="fas fa-eye fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>رؤيتنا</h3>
+            <p>الريادة في تقديم حلول رقمية مبتكرة وآمنة لتوثيق التعليم والشهادات.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-bullseye fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>رسالتنا</h3>
+            <p>تسهيل حياة الأكاديميين والمهنيين عبر ضمان صحة وسرعة توثيق مستنداتهم.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-star fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>قيمنا</h3>
+            <p>الموثوقية العالية، السرعة الدقيقة، والسرية التامة لبيانات المستخدمين.</p>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - مشروع وثّق شهادتك</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
