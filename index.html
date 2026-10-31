@@ -3,27 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وثق شهادتك - الرئيسية</title>
+    <title>الرئيسية - وثّق شهادتك</title>
+    <!-- ربط ملف الـ CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- ربط مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- شريط التنقل العلوي -->
     <header>
-        <div class="logo">وثق شهادتك</div>
+      <div style="background: #ebf8ff; color: #2b6cb0; padding: 10px; text-align: center; font-size: 14px; font-weight: 600; border-bottom: 1px solid #bee3f8;">
+    <i class="fas fa-bullhorn"></i> تبيّن: تم تحديث سياسة توثيق الشهادات لعام 2026، يرجى مراجعة صفحة "عن الموقع".
+</div>
+
+        <div class="logo">وثّق شهادتك</div>
         <nav>
-            <a href="index.html" class="active">الرئيسية</a>
-            <a href="about.html">عن الموقع</a>
-            <a href="contact.html">اتصل بنا</a>
-            <a href="login.html" class="btn-login">تسجيل الدخول</a>
+            <a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> عن الموقع</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+            <a href="login.html" class="btn-login"><i class="fas fa-lock"></i> تسجيل الدخول</a>
         </nav>
     </header>
 
+    <!-- القسم الرئيسي (Hero Section) -->
     <main class="hero">
+        <!-- الصورة الأكاديمية التعبيرية -->
+        <div class="hero-image" style="text-align: center; margin-bottom: 25px;">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&auto=format&fit=crop&q=60" alt="توثيق الشهادات" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        </div>
+        
         <h1>منصتك الآمنة لتوثيق الشهادات الأكاديمية</h1>
         <p>احفظ شهاداتك وثقها بكل سهولة وموثوقية عالية.</p>
-        <br>
-        <a href="login.php" class="cta-btn">ابدأ الآن</a>
+        <a href="login.html" class="cta-btn">ابدأ الآن</a>
     </main>
 
+    <!-- قسم المميزات والبطاقات -->
+    <section class="features-container">
+        <div class="card">
+            <i class="fas fa-shipping-fast fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>سرعة التوثيق</h3>
+            <p>معالجة سريعة ودقيقة للشهادات والأوراق الأكاديمية.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-shield-alt fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>أمان عالي</h3>
+            <p>حماية كاملة لبياناتك وخصوصية معلوماتك الشخصية.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-certificate fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>اعتماد رسمي</h3>
+            <p>شهادات موثقة ومعتمدة بطرق موثوقة ومضمونة.</p>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - مشروع وثّق شهادتك</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
