@@ -3,39 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وثق شهادتك - اتصل بنا</title>
+    <title>اتصل بنا - وثّق شهادتك</title>
+    <!-- ربط ملف الـ CSS المشترك -->
     <link rel="stylesheet" href="style.css">
+    <!-- ربط مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- شريط التنقل العلوي -->
     <header>
-        <div class="logo">وثق شهادتك</div>
+        <div class="logo">وثّق شهادتك</div>
         <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="about.html">عن الموقع</a>
-            <a href="contact.html" class="active">اتصل بنا</a>
-            <a href="login.html" class="btn-login">تسجيل الدخول</a>
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> عن الموقع</a>
+            <a href="contact.html" class="active"><i class="fas fa-envelope"></i> اتصل بنا</a>
+            <a href="login.html" class="btn-login"><i class="fas fa-lock"></i> تسجيل الدخول</a>
         </nav>
     </header>
 
+    <!-- المحتوى الرئيسي لصفحة اتصل بنا -->
     <main class="hero">
-        <h2>تواصل معنا</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">الاسم:</label>
-                <input type="text" id="name" name="name" required placeholder="أدخل اسمك">
+        <div style="font-size: 40px; color: #3182ce; margin-bottom: 15px;">
+            <i class="fas fa-headset"></i>
+        </div>
+        
+        <h1>تواصل معنا</h1>
+        <p>نحن هنا لمساعدتك والرد على كافة استفساراتك الأكاديمية والتقنية.</p>
+        
+        <!-- نموذج التواصل -->
+        <form style="display: flex; flex-direction: column; gap: 15px; margin-top: 25px; text-align: right;">
+            <div>
+                <label for="name" style="display: block; margin-bottom: 5px; font-weight: 600; color: #2d3748; font-size: 14px;">الاسم الكامل:</label>
+                <input type="text" id="name" placeholder="أدخل اسمك الكريم" style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-family: 'Cairo', sans-serif; outline: none;">
             </div>
-            <div class="form-group">
-                <label for="email">البريد الإلكتروني:</label>
-                <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+            
+            <div>
+                <label for="email" style="display: block; margin-bottom: 5px; font-weight: 600; color: #2d3748; font-size: 14px;">البريد الإلكتروني:</label>
+                <input type="email" id="email" placeholder="example@domain.com" style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-family: 'Cairo', sans-serif; outline: none;">
             </div>
-            <div class="form-group">
-                <label for="message">الرسالة:</label>
-                <textarea id="message" name="message" rows="4" required placeholder="اكتبي رسالتك هنا"></textarea>
+            
+            <div>
+                <label for="message" style="display: block; margin-bottom: 5px; font-weight: 600; color: #2d3748; font-size: 14px;">رسالتك أو استفسارك:</label>
+                <textarea id="message" rows="4" placeholder="اكتب استفسارك هنا..." style="width: 100%; padding: 12px; border: 1px solid #cbd5e0; border-radius: 8px; font-family: 'Cairo', sans-serif; outline: none; resize: vertical;"></textarea>
             </div>
-            <button type="submit" class="cta-btn">إرسال</button>
+            
+            <button type="submit" class="cta-btn" style="border: none; cursor: pointer; width: 100%; margin-top: 10px; font-size: 16px;">إرسال الرسالة</button>
         </form>
     </main>
 
+    <!-- قسم معلومات التواصل السريعة -->
+    <section class="features-container">
+        <div class="card">
+            <i class="fas fa-envelope-open-text fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>البريد الرسمي</h3>
+            <p>support@shihadti.edu</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-phone-alt fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>الدعم الهاتفي</h3>
+            <p>+249 123 456 789</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-map-marker-alt fa-2x" style="color: #3182ce; margin-bottom: 10px;"></i>
+            <h3>المقر الرئيسي</h3>
+            <p>الخرطوم، السودان</p>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - مشروع وثّق شهادتك</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
